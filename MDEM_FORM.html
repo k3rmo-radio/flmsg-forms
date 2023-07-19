@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <tilte>MDEM Form v0.1</tilte>
+        <META NAME="EDITABLE" CONTENT="true">
+        <META NAME="MENU_ITEM" CONTENT="MDEM Form v0.1">
+        <style>
+            table, th, td {
+                border: 1px solid rgb(10, 4, 4);
+                border-collapse: collapse;
+                border-radius: 10px;
+                }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>
+                <!-- SITUATION REPORT Number <input name "reportNumber" value="" size="10" maxLength="20" type="text"> 
+                ON <input name="date" type="date">
+                AS OF <input name="time" type="time" format="24h"><br> -->
+                <table>
+                    <tr>
+                        <th>Number</th>
+                        <th>Name</th>
+                        <th>Input</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>JURISDICTION</td>
+                        <td><input name="1" value="" size="40" maxlength="80" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>CALLER (Name, Title)</td>
+                        <td><input name="2" value="" size="40" maxlength="80" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>HAZARD/INCIDENT TYPE</td>
+                        <td><input name="3" value="" size="80" maxlength="80" type="text"></td>
+                    </tr>                
+                    <tr>
+                        <td>4.</td>
+                        <td>WHERE OCCURING</td>
+                        <td><input name="4" value="" size="80" maxlength="80" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>WHEN (DATE/TIME)</td>
+                        <td><input name="5date" type="date"> <input name="5time" type="time"></td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>EOC ACTIVATED (TIME/DATE)</td>
+                        <td><input name="6date" type="date"> <input name="6time" type="time"></td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>CASUALTIES</td>
+                        <td>
+                            (A) NONE <input name="7a" type="checkbox"><br>
+                            (B) DEAD <input name="7b" type="number"><br>
+                            (C) INJURED <input name="7c" type="number"><br>
+                            (D) MISSING <input name="7d" type="number"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>EVACUATION</td>
+                        <td>
+                            (A) NONE <input name="8a" type="checkbox"><br>
+                            (B) NUMBER OF SHELTERS OPENED <input name="8b" type="number"><br>
+                            (C) NUMBER OF PEOPLE IN SHELTERS <input name="8c" type="number"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>DAMAGE</td>
+                        <td>
+                            (A) HOMES <input name="9a" type="number"><br>
+                            (B) BUSINESSES <input name="9b" type="number"><br>
+                            (C) VITAL FACILITIES <input name="9c" type="number"><br>
+                            (D) ROADS/BRIDGES CLOSED <input name="9d" type="number"><br>
+                            (E) OTHER <input name="9e" value="" size="80" maxlength="80" type="text"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>SITUATION</td>
+                        <td>
+                            (A) <input name="10a" type="checkbox"> UNDER CONTROL<br>
+                            (B) <input name="10b" type="checkbox"> STABLE<br>
+                            (C) <input name="10c" type="checkbox"> WORSENING<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11.</td>
+                        <td>ASSISTANCE REQUIRED</td>
+                        <td>
+                            (A) <input name="11a" type="checkbox"> NONE <br>
+                            (B) <input name="11b" value="" size="80" maxlength="160" type="text"> LIST NAMES<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12.</td>
+                        <td>FEDERAL AND STATE AGENCIES NOTIFIED</td>
+                        <td>
+                            (A) <input name="12a" type="checkbox"> NONE <br>
+                            (B) <input name="12b" value="" size="80" maxlength="160" type="text"> LIST NAMES<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.</td>
+                        <td>COMMENTS</td>
+                        <td>
+                            <input name="12b" value="" size="80" maxlength="160" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14.</td>
+                        <td>DATE/TIME REPORT SENT</td>
+                        <td>
+                            <input name="14date" type="date"> <input name="14time" type="time">
+                        </td>
+                    </tr>
+                </table>
+            </p>
+        </form>
+    </body>
+</html>
