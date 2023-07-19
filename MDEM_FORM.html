@@ -8,9 +8,12 @@
         <style>
             table, th, td {
                 border: 1px solid rgb(10, 4, 4);
-                border-collapse: collapse;
-                border-radius: 10px;
+                /* border-collapse: collapse; */
+                /* border-radius: 10px; */
                 }
+            th,td {
+                padding: 10px;
+            }
         </style>
     </head>
     <body>
@@ -32,12 +35,17 @@
                     </tr>
                     <tr>
                         <td>2.</td>
-                        <td>CALLER (Name, Title)</td>
+                        <td>
+                            CALLER<br>
+                            (Name, Title)
+                        </td>
                         <td><input name="2" value="" size="40" maxlength="80" type="text"></td>
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td>HAZARD/INCIDENT TYPE</td>
+                        <td>
+                            HAZARD/<br>
+                            INCIDENT TYPE</td>
                         <td><input name="3" value="" size="80" maxlength="80" type="text"></td>
                     </tr>                
                     <tr>
@@ -47,12 +55,15 @@
                     </tr>
                     <tr>
                         <td>5.</td>
-                        <td>WHEN (DATE/TIME)</td>
+                        <td>
+                            WHEN<br>
+                            (DATE/TIME)
+                        </td>
                         <td><input name="5date" type="date"> <input name="5time" type="time"></td>
                     </tr>
                     <tr>
                         <td>6.</td>
-                        <td>EOC ACTIVATED (TIME/DATE)</td>
+                        <td>EOC ACTIVATED<br>(TIME/DATE)</td>
                         <td><input name="6date" type="date"> <input name="6time" type="time"></td>
                     </tr>
                     <tr>
@@ -99,12 +110,15 @@
                         <td>ASSISTANCE REQUIRED</td>
                         <td>
                             (A) <input name="11a" type="checkbox"> NONE <br>
-                            (B) <input name="11b" value="" size="80" maxlength="160" type="text"> LIST NAMES<br>
+                            (B) <input name="11b" value="" size="80" maxlength="160" type="text" LIST NAMES<br>
                         </td>
                     </tr>
                     <tr>
                         <td>12.</td>
-                        <td>FEDERAL AND STATE AGENCIES NOTIFIED</td>
+                        <td>
+                            FEDERAL AND STATE<br>
+                            AGENCIES NOTIFIED
+                        </td>
                         <td>
                             (A) <input name="12a" type="checkbox"> NONE <br>
                             (B) <input name="12b" value="" size="80" maxlength="160" type="text"> LIST NAMES<br>
@@ -119,7 +133,9 @@
                     </tr>
                     <tr>
                         <td>14.</td>
-                        <td>DATE/TIME REPORT SENT</td>
+                        <td>
+                            DATE/TIME<br>
+                            REPORT SENT</td>
                         <td>
                             <input name="14date" type="date"> <input name="14time" type="time">
                         </td>
