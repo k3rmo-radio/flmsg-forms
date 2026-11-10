@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MDEM SITREP</title>
+        <style>
+            h1 {
+                font-family: sans-serif;
+                font-weight: normal;
+            }
+            body {
+                background-color: lightgray;
+                font-family: sans-serif;
+                font-size: 16px;
+                font-weight: normal;
+            }
+            .content-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                min-width: 400px;
+                border-radius: 5px 5px 0 0;
+                overflow: hidden;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                text-align: left;
+            }
+            .content-table th,
+            .content-table td {
+                padding: 12px 15px;
+                vertical-align: top;
+            }
+            .content-table tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+            .content-table tbody tr:nth-of-type(odd) {
+                background-color: #f3f3f371;
+            }
+            .content-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+            .val {
+                font-weight: bold;
+                white-space: pre-wrap;
+            }
+            .box {
+                display: inline-block;
+                min-width: 1.2em;
+                text-align: center;
+                border: 1px solid #555;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>MDEM SITREP</h1>
+            <p>
+                TO: <span class="val">{var TO}</span><br>
+                <span class="val">{var exermsg}</span><br>
+                SITUATION REPORT Number <span class="val">{var reportNumber}</span>
+                ON <span class="val">{var date}</span>
+                AS OF <span class="val">{var time}</span>
+            </p>
+
+            <table class="content-table">
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>JURISDICTION</td>
+                    <td class="val">{var f1}</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>CALLER<br>(Name, Title)</td>
+                    <td class="val">{var f2}</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>HAZARD/<br>INCIDENT TYPE</td>
+                    <td class="val">{var f3}</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>WHERE OCCURRING</td>
+                    <td class="val">{var f4}</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>WHEN<br>(DATE/TIME)</td>
+                    <td>Date: <span class="val">{var f5date}</span> Time: <span class="val">{var f5time}</span></td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>EOC ACTIVATED<br>(TIME/DATE)</td>
+                    <td>Date: <span class="val">{var f6date}</span> Time: <span class="val">{var f6time}</span></td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>CASUALTIES</td>
+                    <td>
+                        (A) NONE <span class="box">{var f7a}</span><br>
+                        (B) DEAD <span class="val">{var f7b}</span><br>
+                        (C) INJURED <span class="val">{var f7c}</span><br>
+                        (D) MISSING <span class="val">{var f7d}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>EVACUATION</td>
+                    <td>
+                        (A) NONE <span class="box">{var f8a}</span><br>
+                        (B) NUMBER OF SHELTERS OPENED <span class="val">{var f8b}</span><br>
+                        (C) NUMBER OF PEOPLE IN SHELTERS <span class="val">{var f8c}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>DAMAGE</td>
+                    <td>
+                        (A) HOMES <span class="val">{var f9a}</span><br>
+                        (B) BUSINESSES <span class="val">{var f9b}</span><br>
+                        (C) VITAL FACILITIES <span class="val">{var f9c}</span><br>
+                        (D) ROADS/BRIDGES CLOSED <span class="val">{var f9d}</span><br>
+                        (E) OTHER<br>
+                        <span class="val">{var f9e}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>SITUATION</td>
+                    <td>
+                        (A) <span class="box">{var f10a}</span> UNDER CONTROL<br>
+                        (B) <span class="box">{var f10b}</span> STABLE<br>
+                        (C) <span class="box">{var f10c}</span> WORSENING
+                    </td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td>ASSISTANCE<br>REQUIRED</td>
+                    <td>
+                        (A) <span class="box">{var f11a}</span> NONE<br>
+                        (B) <span class="val">{var f11b}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td>FEDERAL AND STATE<br>AGENCIES NOTIFIED</td>
+                    <td>
+                        (A) <span class="box">{var f12a}</span> NONE<br>
+                        (B) <span class="val">{var f12b}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13.</td>
+                    <td>COMMENTS</td>
+                    <td class="val">{var f13a}</td>
+                </tr>
+                <tr>
+                    <td>14.</td>
+                    <td>DATE/TIME<br>REPORT SENT</td>
+                    <td>Date: <span class="val">{var f14date}</span> Time: <span class="val">{var f14time}</span></td>
+                </tr>
+            </table>
+        </center>
+        <center>{var Templateversion}</center>
+        <center>COMM 002 Rev.4 May 2009</center>
+    </body>
+</html>

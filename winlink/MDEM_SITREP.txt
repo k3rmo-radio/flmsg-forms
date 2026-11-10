@@ -1,0 +1,49 @@
+Form: MDEM_SITREP_Initial.html,MDEM_SITREP_Viewer.html
+To:
+Subj: MDEM SITREP #<var reportNumber> <var date> <var time>
+Msg:
+TO:
+<var TO>
+
+<var exermsg>
+
+SITUATION REPORT Number <var reportNumber> ON <var date> AS OF <var time>
+
+1. JURISDICTION: <var f1>
+2. CALLER (Name, Title): <var f2>
+3. HAZARD/INCIDENT TYPE: <var f3>
+4. WHERE OCCURRING: <var f4>
+5. WHEN (DATE/TIME): <var f5date> <var f5time>
+6. EOC ACTIVATED (TIME/DATE): <var f6date> <var f6time>
+7. CASUALTIES
+   (A) NONE: <var f7a>
+   (B) DEAD: <var f7b>
+   (C) INJURED: <var f7c>
+   (D) MISSING: <var f7d>
+8. EVACUATION
+   (A) NONE: <var f8a>
+   (B) NUMBER OF SHELTERS OPENED: <var f8b>
+   (C) NUMBER OF PEOPLE IN SHELTERS: <var f8c>
+9. DAMAGE
+   (A) HOMES: <var f9a>
+   (B) BUSINESSES: <var f9b>
+   (C) VITAL FACILITIES: <var f9c>
+   (D) ROADS/BRIDGES CLOSED: <var f9d>
+   (E) OTHER:
+<var f9e>
+10. SITUATION
+   (A) UNDER CONTROL: <var f10a>
+   (B) STABLE: <var f10b>
+   (C) WORSENING: <var f10c>
+11. ASSISTANCE REQUIRED
+   (A) NONE: <var f11a>
+   (B) <var f11b>
+12. FEDERAL AND STATE AGENCIES NOTIFIED
+   (A) NONE: <var f12a>
+   (B) <var f12b>
+13. COMMENTS:
+<var f13a>
+14. DATE/TIME REPORT SENT: <var f14date> <var f14time>
+
+<var Templateversion> (Winlink)
+COMM 002 Rev.4 May 2009
